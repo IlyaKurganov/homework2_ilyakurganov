@@ -15,10 +15,9 @@ public class Task1 {
 
         System.out.println("Введите температуру в Фаренгейтах (целое число): ");
         if (sc.hasNextInt()) {
-            int tempFahr = sc.nextInt();
-            int tempCels = (tempFahr - 32) * 5 / 9;
-            System.out.println("Температура в Фаренгейтах: " + tempFahr);
-            System.out.println("Температура в Цельсиях: " + tempCels);
+            double tempFahr = sc.nextInt();
+            double tempCels = (tempFahr - 32) * 5 / 9.0;
+            System.out.println(tempFahr + " градусов по Фаренгейту равна "+ tempCels + " по Цельсию");
         } else {
             System.out.println("Вы ввели не целое число или не число вовсе, попробуйте еще раз");
         }
